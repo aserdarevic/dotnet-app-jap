@@ -14,16 +14,6 @@ az acr login -n <your_registry_name>
 
 This repository contains 2 Dockerfiles, a Linux container and a Windows container.
 
-### Publish the Windows image to your Registry
-
-To build the Windows image locally and publish to ACR, run the following command:
-
-```docker
-docker build -f Dockerfile.windows -t dotnetcore-docs-hello-world-windows . 
-docker tag dotnetcore-docs-hello-world-windows <your_registry_name>.azurecr.io/dotnetcore-docs-hello-world-windows:latest
-docker push <your_registry_name>.azurecr.io/dotnetcore-docs-hello-world-windows:latest
-```
-
 ### Publish the Linux image to your Registry
 
 To build the Linux image locally and publish to ACR, run the following command:
